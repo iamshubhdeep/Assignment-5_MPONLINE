@@ -1,5 +1,13 @@
 # Employee Attrition Prediction using Decision Tree and Random Forest
 
+## Details
+
+- Name : Shubhdeep Singh
+- Application No. : IN26011804
+- College Reg. No. : 23BCE11460
+- Batch No. : 1(A)
+- Email Id : shubhdeep.23bce11460@vitbhopal.ac.in
+
 ## Objective
 Predict whether an employee is likely to leave the organization (attrition) based on
 demographic, professional, and work-related attributes, and compare the performance of a
@@ -9,9 +17,6 @@ Decision Tree Classifier against a Random Forest Classifier.
 IBM HR Analytics Employee Attrition & Performance Dataset
 Kaggle link: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
 
-> The raw dataset is **not** included in this repository (per assignment instructions). Download
-> `WA_Fn-UseC_-HR-Employee-Attrition.csv` from the Kaggle link above and place it in the project
-> root before running the notebook, or let the notebook auto-download it via `kagglehub`.
 
 ## Libraries Used
 - pandas
@@ -43,18 +48,17 @@ pip install pandas numpy scikit-learn matplotlib seaborn kagglehub
    reported the effect on performance.
 
 ## Results
-*(Fill in with your actual numbers after running `Assignment-5.ipynb` on the real dataset)*
 
-| Model          | Accuracy | Precision | Recall | F1-Score |
-|----------------|----------|-----------|--------|----------|
-| Decision Tree  |          |           |        |          |
-| Random Forest  |          |           |        |          |
+| Model          |  Accuracy  | Precision | Recall | F1-Score |
+|----------------|------------|-----------|--------|----------|
+| Decision Tree  |    0.79    |    0.42   |  0.38  |   0.40   |
+| Random Forest  |    0.87    |    0.65   |  0.31  |   0.42   |
 
 Confusion matrices: see `confusion_matrices.png`
 Feature importance plot: see `feature_importance.png`
 
 ## Model Comparison
-*(Fill in 3–4 observations after running the notebook, e.g.:)*
+
 - Random Forest generally achieves higher accuracy and a better F1-score than the single
   Decision Tree, since averaging across many trees reduces variance and overfitting.
 - The Decision Tree tends to overfit the training data more, which can show up as a larger
@@ -66,8 +70,7 @@ Feature importance plot: see `feature_importance.png`
   retention strategy.
 
 ## Conclusion
-*(150–200 words, see the Conclusion section inside `Assignment-5.ipynb` — edit with your
-actual findings)*
+
 
 Both a Decision Tree and a Random Forest classifier were trained to predict employee attrition.
 Based on the evaluation metrics, [state which model performed better]. Random Forest often
@@ -82,8 +85,8 @@ computational cost for training and inference compared to a single tree.
 ## Repository Structure
 ```
 .
-├── Assignment-5.ipynb   # Full analysis notebook (Tasks 1–5 + bonus)
+├── Assignment-5.ipynb   
 ├── README.md
-├── confusion_matrices.png   # generated after running the notebook
-└── feature_importance.png   # generated after running the notebook
+├── confusion_matrices.png   
+└── feature_importance.png   
 ```
